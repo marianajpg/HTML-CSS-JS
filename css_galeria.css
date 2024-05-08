@@ -103,7 +103,7 @@ margin-right: 3em;
   min-height: 100px;
    text-align: center;
   min-width: 100px; 
-  flex-grow: 2; 
+  flex-grow: 1; 
   flex-shrink: 1;
 }
 
