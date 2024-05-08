@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Learning</title>
+      <link href="css_formulario.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <section>
+      <h1 ><a href="galeria.html" target="_blank">Formulário</a></h1>
+      <form method="post">
+        <fieldset>
+          <legend>Você realiza algum hobby/profissão ralacionado à arte?</legend>
+          <label><input class="inline" id="afirmation" type="radio" name="sim/não" value="sim">Sim</label>
+          <label class="ultimo"><input  class="inline" id="negation" type="radio" name="sim/não" value="nãp">Não</label>
+        </fieldset>
+        <fieldset>
+          <legend>Se sim, qual tipo de arte?</legend>
+          <label for="pintura"> <input class="inline" id="pintura" type="checkbox" name="tipo_art" value="pintura"> Pintura</label>
+          <label for="escultura"><input class="inline" id="escultura" type="checkbox" name="tipo_art" value="escultura"> Escultura</label>
+          <label for="fotografia""><input class="inline" id="fotografia" type="checkbox" name="tipo_art" value="fotografia"> Fotografia</label>
+          <label for="outro"><input class="inline" id="outro" type="checkbox" name="tipo_pet" value="outro"> Outro</label>
+          <input class="ultimo" type="text" name="outro_inserido" placeholder="Insira a arte realizada">
+        </fieldset>
+        <fieldset>
+        <input type="text" name="art_foto_url" placeholder="art foto URL" required>
+        <button class="ultimo" type="enviar">Enviar</button>
+        </fieldset>
+        <fieldset>
+          <label class="legend_labeltext" for="first-name">Digite seu primeiro nome: <input  id="first-name" name="first-name" type="text" required /></label>
+          <label for="last-name">Digite seu sobrenome: <input id="last-name" name="last-name" type="text" required /></label>
+          <label for="email">Digite seu e-mail: <input id="email" name="email" type="email" required /></label>
+          <label for="new-password">Crie uma nova senha: <input class="ultimo" id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Tipo de conta</legend>
+          <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Pessoal</label>
+          <label class="ultimo" for="business-account"><input  id="business-account" type="radio" name="account-type" class="inline" /> Fornecedora</label>
+        </fieldset>
+        <fieldset>
+          <label for="fotopet">Carregue uma foto do sua arte: <input id="fotoart" type="file" name="file" /></label>
+          <label for="idade">Insira sua idade (em anos): <input id="idade" type="number" name="idade" /></label>
+          <label for="como_conheceu"">Como nos conheceu?
+            <select id="como_conheceu" name="como_conheceu">
+              <option value="">(selecione um)</option>
+              <option value="1">Panfleto</option>
+              <option value="2">Anúncio Youtube</option>
+              <option value="3">Instagram</option>
+              <option value="4">Outro</option>
+            </select>
+          </label>
+          <label for="bio">Escreva uma breve biografia:
+            <textarea class="ultimo" id="bio" name="bio" rows="3" cols="30" placeholder="Minha primeira arte foi feita quando..."></textarea>
+          </label>
+        </fieldset>
+        <label class="confirm" for="terms-and-conditions">
+          <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Eu aceito os <a href="https://www.freecodecamp.org/news/terms-of-service/">termos e condições</a>
+        </label>
+        <input type="Enviar" value="Enviar" />
+      </form>
+    </section>
+    <script>
+     alert("Olá, seja bem vinda(o)!");
+      
+    </script>
+  </body>
+</html>
