@@ -1,1 +1,127 @@
+html {
+  height: 100%;
+  width: 100%;
+}
 
+body{
+  background-color: #783636;
+}
+
+section{
+  justify-content: center;
+  background-color: #f7ffd1;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 500px;
+  margin: auto;
+  padding-top: 0.5em;
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+input[type="number"]{
+  width: 150px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 30px;
+  border: 2px solid #58282888;
+  font-size: 0.8em;
+  background-color: #fbffe5;
+}
+
+button{
+  font-size: 1em;
+  background-color: #ba433688;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid #58282888;
+  margin: 10px;
+  width: 150px;
+  transition: 200ms;
+}
+
+button:hover{
+  background-color: #783636;
+  border: 2px solid #ffffff88;
+}
+
+#add_operando{
+  display: flex;
+  width: 200px;
+  margin:0.8em 0 2em 0;
+  justify-content: center;
+  padding: 2px;
+}
+
+select{
+  width: 150px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 30px;
+  border: 2px solid #58282888;
+  font-size: 1em;
+  background-color: #fbffe5;
+}
+
+div{
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+div > div,
+#prim_operando{
+  margin: 0.1em;
+  padding:0.1em;
+}
+
+
+#numeros{
+  margin:0;
+  padding:0;
+}
+
+p, label{
+  font-size: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 1em;
+}
+
+
+nav{
+  text-align: center;
+  margin: 1em;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #f99090;
+}
+
+#resultado{
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: #c44040;
+}
+
+#alerta{
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  width: 400px;
+  text-align: center;
+}
