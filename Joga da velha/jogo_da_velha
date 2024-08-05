@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Jogo da velha</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <h1>Joga da Velha</h1>
+  <section class="container">
+    <section id="oponente">
+      <p>Escolha seu oponente</p>
+      <button class="button-oponente" name="oponente" id="oponente-fisico" value="1">Multijogador</button>
+      <button class="button-oponente"  name="oponente" id="oponente-bot" value="2">Bot</button>
+    </section>
+    <section id="board">
+      <div class="square" id="zero"></div>
+      <div class="square" id="um"></div>
+      <div class="square" id="dois"></div>
+      <div class="square" id="tres"></div>
+      <div class="square" id="quatro"></div>
+      <div class="square" id="cinco"></div>
+      <div class="square" id="seis"></div>
+      <div class="square" id="sete"></div>
+      <div class="square" id="oito"></div>
+    </section>
+    <section id="result">
+      <p id="result-text"></p>
+      <button id="restart">Reiniciar</button>
+    </section>
+  </section>
+</body>
+
+</html>
