@@ -1,0 +1,168 @@
+
+
+body {
+  background-color: #783636;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  margin: 3em 0 0 0 ; 
+}
+
+.container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7ffd1;
+  border-radius: 30px;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1{
+  color:#faffe0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px){
+  .container{
+    width: 100%;
+  }
+
+  .square{
+    width: 4em; 
+    height: 4em;
+  }
+  
+
+  img{
+    width: 3em; 
+    height: 3em;
+  }
+
+  #board{
+    grid-gap: 5px;
+  }
+
+  .button-oponente{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin-top: 0.5em;
+  }
+
+}
+
+@media (min-width: 600px){
+  .container{
+    width: 600px;
+  }
+  
+  .square {
+    width: 6em; 
+    height: 6em;
+  }
+
+  #board{
+    grid-gap: 10px;
+  }
+
+}
+
+#board{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.square {
+  background-color: #faffe0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  
+}
+
+@keyframes borda-div {
+  0% {
+    border: 2px solid #933e3e99;
+    box-shadow: 0 0 10px #ffddc299;
+    background-color: #ffffe599;
+  }
+  50% {
+    border: 2px solid #933e3e99;
+    box-shadow: 0 0 10px #f8b79b99;
+    background-color: #ffffe599;
+  }
+  100% {
+    border: 2px solid #933e3e99;
+    box-shadow: 0 0 10px #f8b79b99;
+    background-color: #ffe2d699;
+  }
+}
+
+
+
+#um, #dois, #zero, #tres, #quatro, #cinco{
+  border-bottom: 2px solid #783636;
+}
+
+#tres, #quatro, #um, #sete, #seis, #zero{
+  border-right: 2px solid #783636;
+}
+
+p{
+  text-align: center;
+  display: block;
+  font-size: 1.1em;
+}
+
+label{
+  display: block;
+  font-size: 1.1em;
+}
+
+.button-oponente{
+  background-color: #f7ffd1;
+  border: 2px solid #783636;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  color: #783636;
+}
+button:hover{
+  background-color: #783636;
+  border: 2px solid #ffffff88;
+  color: white;
+}
+
+button{
+  font-size: 1em;
+  background-color: #ba433688;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid #58282888;
+  margin: 10px;
+  width: 150px;
+  transition: 200ms;
+}
+
+button:hover{
+  background-color: #783636;
+  border: 2px solid #ffffff88;
+}
+
+#result-text{
+  font-size: 1.5em;
+  color: #b43c3c;
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
